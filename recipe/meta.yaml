@@ -1,13 +1,13 @@
 {% set name = "pandas-indexing" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pandas-indexing-{{ version }}.tar.gz
-  sha256: 980af515243d41a562fc03dd21c2f81e10f7d4eb378c18ff266a197c38b15a6c
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 2f8a18f82e58c02d04038a5af680d7447bfb8deae1e163725bd8ad37655237dc
 
 build:
   noarch: python
